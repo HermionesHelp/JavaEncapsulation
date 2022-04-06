@@ -1,7 +1,7 @@
 package com.company;
 
 public class Person {
-
+    // Notice that our properties are now private
     private String firstName;
     private String lastName;
     private int age;
@@ -12,6 +12,7 @@ public class Person {
         this.age = age;
     }
 
+    // these methods are now specific "getters" instead of methods called "print"
     public String getFullName() {
         return this.firstName + " " + this.lastName;
     }
@@ -20,28 +21,11 @@ public class Person {
         return this.firstName.substring(0, 1) + "." + this.lastName.substring(0, 1) + ".";
     }
 
+    // Create getters for the firstName, lastName, and age properties
 
-//    public String getFirstName() {
-//        return this.firstName;
-//    }
-//
-//    public String getLastName() {
-//        return this.lastName;
-//    }
-//
-//    public int getAge() {
-//        return this.age;
-//    }
 
-//    public void setFirstName(String firstName) {
-//        this.firstName = firstName;
-//    }
-//
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
-//
-//    public void haveBirthday() {
-//        this.age += 1;
-//    }
+    // Create setters for the firstName, and lastName properties
+
+    // Create a method called haveBirthday that increments the age property by 1
+
 }
